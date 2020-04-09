@@ -13,7 +13,7 @@ movey = 0
 time1 = 0
 time2 = 0
 clickenvet = 0
-Coordinates = 0
+coordinates = 0
 # 이동
 for line in rdr:
     # try:
@@ -30,16 +30,16 @@ for line in rdr:
 # 미세한 좌표 이동값은 무시
     if abs(movex) > 3 or abs(movey) > 3:
         if movex > 0 and movey > 0:
-            Coordinates = 1
+            coordinates = 1
         elif movex < 0 and movey > 0:
-            Coordinates = 2
+            coordinates = 2
         elif movex < 0 and movey < 0:
-            Coordinates = 3
+            coordinates = 3
         elif movex > 0 and movey < 0:
-            Coordinates = 4
+            coordinates = 4
         # Coordinates 해당 좌표 평면으로 아래 인자값만큼 이동
         wr.writerow([abs(movex)+abs(movey),
-                     abs(time2-time1)*1000000, Coordinates])
+                     abs(time2-time1)*1000000, coordinates])
 
     movey = (y2 - y)
     time2 = time1

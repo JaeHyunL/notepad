@@ -72,7 +72,7 @@ def on_release(key):
         # Stop listener
         return False
 
-
+    
 with MouseListener(on_move=on_move, on_click=on_click, on_scroll=on_scroll) as listener:
     listener.join()
 with KeyboardListener(on_press=on_press, on_release=on_release) as listener:
