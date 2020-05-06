@@ -7,7 +7,6 @@ import csv
 
 f = open('mouse_logs.csv', 'w', newline='')
 f2 = open('keyboard_logs.csv', 'w', newline='')
-# TODO datetime.now.strtime 함수화 사용
 wr = csv.writer(f)
 
 KST = timezone(timedelta(hours=9))
@@ -72,7 +71,7 @@ def on_release(key):
         # Stop listener
         return False
 
-    
+
 with MouseListener(on_move=on_move, on_click=on_click, on_scroll=on_scroll) as listener:
     listener.join()
 with KeyboardListener(on_press=on_press, on_release=on_release) as listener:
