@@ -1,14 +1,12 @@
 from pynput.mouse import Listener
 from datetime import datetime, timezone, timedelta
-import time
 import csv
-
+import time
 
 f = open('mouse_logs.csv', 'w', newline='')
 
-# TODO datetime.now.strtime 함수화 사용
 wr = csv.writer(f)
-
+# 한국 시간으로 저장하기 위해 포멧을 맞춰준다
 KST = timezone(timedelta(hours=9))
 
 now = datetime.now(KST)
