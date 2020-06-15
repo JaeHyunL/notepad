@@ -10,5 +10,4 @@ Q1. python으로 random 숫자를 n개 생성하는 함수를 만드세요. (20�
 
 
 병합정렬에 간단히 설명하자면
-
-![Alt text] (C:\Users\swaa\Desktop)
+![aa](https://user-images.githubusercontent.com/48937399/84622030-0f0f7000-af17-11ea-9e93-6e6b21eaed38.png)
