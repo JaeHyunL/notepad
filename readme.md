@@ -18,3 +18,5 @@ Q1. python으로 random 숫자를 n개 생성하는 함수를 만드세요. (20�
 
 두 부분을 쪼개는데 O(log N)만큼에 시간복잡도가 사용되고 , 데이터 병합에 O(N) 만큼 시간 복잡도를 사용하기에 
 정렬 상태와 무관하게 언제나 O(n log n)입니다.
+
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=JaeHyunL&show_icons=true&theme=radical)
